@@ -1,0 +1,27 @@
+---
+title: "Course #9 Project"
+author: "David Stanley"
+date: "January 02,2020"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Developing Data Products Project #1:
+```{r}
+library("leaflet")
+David_map = leaflet() %>%
+      addTiles() %>%
+      addMarkers(lat=38.29954172360533 , lng=-76.63821894733236 , popup = "Action Lounge and Billiards")
+
+David_map
+
+
+      
+```
